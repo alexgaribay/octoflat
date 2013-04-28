@@ -17,7 +17,7 @@ $ rake install['octoflat']
 $ rake generate
 ````
 
-##### Grabbing the latest updates #####
+### Grabbing the latest updates as a module ####
 
 ````
 $ cd your_octopress_dir
@@ -34,8 +34,8 @@ $ rake generate
 ````
 
 
-### Please help contribute ###
+## Please help contribute ##
 This is my first theme and there is a lot of code that isn't necessary. I'll need some help cleaning up the code and making the theme more customizable.
 
-### License ###
+## License ##
 This theme is licensed under a MIT License - http://opensource.org/licenses/mit-license.html
