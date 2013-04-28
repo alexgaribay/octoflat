@@ -28,7 +28,7 @@
     <h5>{% include post/date.html %}{{ time }}</h5>
   </div>
 </header>
-  <div class="row">
+  <div class="row-flat">
     <div class="span12">
       {{ content | excerpt }}
       {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
