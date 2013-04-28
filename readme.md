@@ -5,6 +5,8 @@ This is a theme using [Twitter Bootstrap]("http://twitter.github.io/bootstrap/")
 
 This theme has a live preview at [AlexGaribay.com](http://alexgaribay.com).
 
+Please update the [Wiki page](https://github.com/alexgaribay/octoflat/wiki/Sites-Using-Octoflat) if you are using this theme.
+
 ## Installing the theme
 
 ### As a submodule ###
