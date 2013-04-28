@@ -1,0 +1,38 @@
+{% unless page.no_header %}
+{% if index %}
+  <div class="row-fluid">
+    <div class="span2">
+        <h1 class="date-time">{% include post/date.html %}{{ time }}</h5>
+          <div class="row-fluid">
+          {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
+          <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a>
+          {% endif %}
+          </div>
+          {% if post.categories %}
+          <div class="row-fluid">
+          {% for category in post.categories %}
+          <span class="badge">{{ category}}</span>
+          {% endfor %}
+          </div>
+          {% endif %}
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h1>
+      {{ content }}
+    </div>
+  </div>
+{% else %}
+  <header>
+  <div class="jumbotron">
+    {% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}
+    <h5>{% include post/date.html %}{{ time }}</h5>
+  </div>
+</header>
+  <div class="row">
+    <div class="span12">
+      {{ content | excerpt }}
+      {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
+    </div>
+  </div>
+{% endif %}
+{% endunless %}
