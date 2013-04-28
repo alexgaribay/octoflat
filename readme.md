@@ -1,7 +1,7 @@
 Octoflat
 ======
 
-This is a theme using [Twitter Bootstrap]("http://twitter.github.io/bootstrap/") and Designmodo's [Flat UI]("https://github.com/designmodo/Flat-UI") theme which can be previewed on [Designmodo's website]("http://designmodo.com/flat-free/")
+This is a theme using [Twitter Bootstrap]("http://twitter.github.io/bootstrap/") and Designmodo's [Flat UI]("https://github.com/designmodo/Flat-UI") theme which can be previewed on [Designmodo's website]("http://designmodo.com/flat-free/").
 
 This theme has a live preview at [AlexGaribay.com](http://alexgaribay.com).
 
