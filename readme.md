@@ -14,7 +14,6 @@ Please update the [Wiki page](https://github.com/alexgaribay/octoflat/wiki/Sites
 ````
 $ cd your_octopress_dir
 $ git submodule add https://github.com/alexgaribay/octoflat .themes/octoflat
-$ git submodule update --init
 $ rake install['octoflat']
 $ rake generate
 ````
@@ -24,7 +23,6 @@ $ rake generate
 ````
 $ cd your_octopress_dir
 $ git submodule update
-# regenerate, make changes, etc...
 ````
 
 ### As a clone ###
