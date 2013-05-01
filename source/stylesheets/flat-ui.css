@@ -227,7 +227,8 @@ h4 {
   color: #ECF0F1;
   font-size: 18px;
   font-weight: 500;
-  margin-top: 4px; }
+  margin-top: 4px; 
+  line-height: 18px;}
 
 h5 {
   color: #ECF0F1;
