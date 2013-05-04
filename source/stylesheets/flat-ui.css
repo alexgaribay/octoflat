@@ -2621,9 +2621,19 @@ hr { display: block; height: 1px;
   float:right;
 }
 
-  .navbar-inverse .nav > li > a:hover,
-  .navbar-inverse .nav > li > a:focus,
-  .navbar-inverse .dropdown-menu a:hover,
-  .navbar-inverse .dropdown-menu a:focus {
-    background-color: #ECF0F1;
-  }
+.navbar-inverse .nav > li > a:hover,
+.navbar-inverse .nav > li > a:focus,
+.navbar-inverse .dropdown-menu a:hover,
+.navbar-inverse .dropdown-menu a:focus {
+  background-color: #ECF0F1;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+  /* Safari and Chrome CSS here */
+  .navbar-inverse .nav > li > a {
+  color: #ECF0F1;
+  font-weight: 400;
+}
+
+}
