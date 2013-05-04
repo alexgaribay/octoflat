@@ -577,7 +577,10 @@ h6 {
     .navbar .nav > li > ul li ul {
       left: 100%; }
   .navbar .nav > li > a {
-    padding: 20px 15px 17px; }
+    padding: 15px 15px 17px; 
+    margin-top: 4px; 
+    border-radius: 5px;
+    -moz-border-radius: 5px; }
     .navbar .nav > li > a:hover {
       color: #1abc9c; }
   .navbar .nav li {
@@ -652,6 +655,9 @@ h6 {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none; }
+
+.navbar-inverse .nav .active > a:hover {
+    background-color: #ECF0F1; }
 
 .navbar-unread {
   background-color: #e74c3c;
@@ -2615,3 +2621,9 @@ hr { display: block; height: 1px;
   float:right;
 }
 
+  .navbar-inverse .nav > li > a:hover,
+  .navbar-inverse .nav > li > a:focus,
+  .navbar-inverse .dropdown-menu a:hover,
+  .navbar-inverse .dropdown-menu a:focus {
+    background-color: #ECF0F1;
+  }

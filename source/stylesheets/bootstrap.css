@@ -4807,7 +4807,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-inverse .btn-navbar {
-  color: #ffffff;
+  color: #2980B9;
 
 }
 
@@ -4816,7 +4816,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .btn-navbar.active,
 .navbar-inverse .btn-navbar.disabled,
 .navbar-inverse .btn-navbar[disabled] {
-  color: #ffffff;
+  color: #1abc9c;
 }
 
 .navbar-inverse .btn-navbar:active,
