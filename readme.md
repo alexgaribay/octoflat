@@ -38,11 +38,11 @@ $ rake generate
 ### Configuring Navigation ###
 Add a navigation section to your _config.yml file with the following format:
 
-''''
+````
 navigation:
 - text: Home
   url: /index.html
-''''
+````
 
 
 ## Please help contribute ##
