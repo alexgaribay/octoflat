@@ -5,7 +5,7 @@
         <h1 class="date-time">{% include post/date.html %}{{ time }}</h5>
           <div class="row-fluid">
           {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
-          <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a>
+          <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a> <span class="fui-bubble-16"></span>
           {% endif %}
           </div>
           {% if post.categories %}
@@ -28,7 +28,7 @@
     <h5>{% include post/date.html %}{{ time }}</h5>
   </div>
 </header>
-  <div class="row-flat">
+  <div class="row-fluid">
     <div class="span12">
       {{ content | excerpt }}
       {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}

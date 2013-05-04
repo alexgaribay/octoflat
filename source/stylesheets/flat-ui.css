@@ -85,7 +85,8 @@
   content: "\e012"; }
 
 .fui-bubble-16:before {
-  content: "\e013"; }
+  content: "\e013"; 
+  color: #3498DB;}
 
 @font-face {
   font-family: "Flat-UI-Icons-24";
@@ -178,7 +179,10 @@
 body {
   color: #BDC3C7;
   background: #34495e;
-  font: 18px/1.831 "Quicksand", sans-serif; }
+  font: 18px/1.831 "Open Sans", sans-serif; }
+
+p {
+  font-weight: 300; }
 
 a {
   color: #3498DB;
@@ -193,9 +197,10 @@ a {
     text-decoration: none; }
 
 h1 {
-  color: rgb(255, 85, 68);
+  color: #ff5544;
   font-size: 32px;
-  font-weight: 900; }
+  font-weight: 900; 
+  font-family: "Quicksand"; }
   .date-time{
     font-size: 16px;
     color: #ECF0F1;
@@ -207,26 +212,29 @@ h1 {
   }
 
 h2 {
-  color: rgb(255, 85, 68);
+  color: #ff5544;
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 500;
+  font-family: "Quicksand";
   margin-bottom: 2px; }
 
 h3 {
   color: #ECF0F1;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
+  font-family: "Quicksand";
   margin-bottom: 4px;
   margin-top: 2px; }
   .tagline
   {
-    font-weight: 500;
+    font-weight: 400;
   }
 
 h4 {
   color: #ECF0F1;
   font-size: 18px;
   font-weight: 500;
+  font-family: "Quicksand";
   line-height: 18px;
   margin-top: 4px; }
 
@@ -234,6 +242,7 @@ h5 {
   color: #ECF0F1;
   font-size: 16px;
   font-weight: 500;
+  font-family: "Quicksand";
   text-transform: none; }
   .date{
     margin-top: 26px;
@@ -243,6 +252,7 @@ h6 {
   color: #ECF0F1;
   font-size: 13px;
   font-weight: 500;
+  font-family: "Quicksand";
   text-transform: none; }
 
 .btn {
@@ -634,7 +644,8 @@ h6 {
   background: #2980B9;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
 .navbar-inverse .nav > li > a {
-  color: #ECF0F1; }
+  color: #ECF0F1; 
+  font-weight: 300; }
 .navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
   background-color: transparent;
   color: #1abc9c;
@@ -1861,7 +1872,6 @@ input.todo-search-field {
   .todo-search {
     background-image: "../images/todo/search-2x.png"; } }
 footer {
-  margin-top: 40px;
   color: #bdc1c5;
   font-size: 15px;
   }
@@ -1873,6 +1883,10 @@ footer {
   }
 .archive {
   margin-top: 0;
+}
+
+.footer-page {
+  margin-top: 40px;
 }
 
 .footer-title {
@@ -2559,9 +2573,10 @@ body.vjs-full-window {
 .jumbotron {
   font-size: 60px;
   line-height: 70px;
+  font-family: "Quicksand";
   position: relative;
   padding: 70px 0;
-  color: rgb(255, 85, 68); }
+  color: #ff5544; }
 .jumbotron:after {
   content: '';
   display: block;
@@ -2575,21 +2590,25 @@ body.vjs-full-window {
 
 .badge {
   display: inline-block;
-  padding: 2px 4px;
+  padding: 4px 4px;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 300;
   color: #ffffff;
   white-space: nowrap;
   vertical-align: center;
   background-color: #3498DB;
 }
+
+li {
+  font-weight: 300; }
+
 hr { display: block; height: 1px;
-    border: 0; border-top: 1px solid rgb(255, 85, 68);
+    border: 0; border-top: 1px solid #ff5544;
     margin: 1em 0; padding: 0; }
 
 .border-top {
-  border-top: 1px solid rgb(255, 85, 68)
+  border-top: 1px solid #ff5544
 }
 
 .float-right{
