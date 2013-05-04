@@ -227,8 +227,8 @@ h4 {
   color: #ECF0F1;
   font-size: 18px;
   font-weight: 500;
-  margin-top: 4px; 
-  line-height: 18px;}
+  line-height: 18px;
+  margin-top: 4px; }
 
 h5 {
   color: #ECF0F1;
@@ -567,7 +567,7 @@ h6 {
     .navbar .nav > li > ul li ul {
       left: 100%; }
   .navbar .nav > li > a {
-    padding: 14px 15px 17px; }
+    padding: 20px 15px 17px; }
     .navbar .nav > li > a:hover {
       color: #1abc9c; }
   .navbar .nav li {

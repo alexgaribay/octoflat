@@ -33,6 +33,17 @@ $ rake install['octoflat']
 $ rake generate
 ````
 
+---------
+
+### Configuring Navigation ###
+Add a navigation section to your _config.yml file with the following format:
+
+''''
+navigation:
+- text: Home
+  url: /index.html
+'''
+
 
 ## Please help contribute ##
 This is my first theme and there is a lot of code that isn't necessary. I'll need some help cleaning up the code and making the theme more customizable.

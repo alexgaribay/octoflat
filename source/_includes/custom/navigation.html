@@ -1,4 +1,9 @@
 <ul class="nav">
-  <li><a href="{{ root_url }}/">Blog</a></li>
-  <li><a href="{{ root_url }}/blog/archives">Archives</a></li>
+	{% for link in site.navigation %}
+      {% if page.url == link.url or index %}
+        <li class="active"><a href="{{ link.url }}">{{ link.text }}</a></li>
+      {% else %}
+   		<li><a href="{{ link.url }}">{{ link.text }}</a></li>
+   	  {% endif %}     
+    {% endfor %}
 </ul>

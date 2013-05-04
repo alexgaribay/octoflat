@@ -4281,7 +4281,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-inner {
-  min-height: 40px;
+  min-height: 60px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #fafafa;
