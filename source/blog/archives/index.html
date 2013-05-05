@@ -6,24 +6,24 @@ footer: false
 
 <div clas id="blog-archives">
 {% for post in site.posts reverse %}
-	{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-	<div class="row-fluid">
+  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+  <div class="row-fluid">
 	<div class="span1">
 	{% unless year == this_year %}
 	  {% assign year = this_year %}
 	    <h1>{{ year }}</h1>
 	{% endunless %}
 	</div>
-	  {% if post == site.posts.first %}
-	  	  <div class="span11">
-	  {% else %}
-	  	<div class="span11 border-top">
-	  {% endif %}
+	{% if post == site.posts.first %}
+	<div class="span11">
+	{% else %}
+	<div class="span11 border-top">
+	{% endif %}
 
-		<article>
-		  {% include archive_post.html %}
-		</article>
-	  </div>
+	  <article>
+	  {% include archive_post.html %}
+	  </article>
 	</div>
+  </div>
 {% endfor %}
 </div>
