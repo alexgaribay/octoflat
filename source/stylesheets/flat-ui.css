@@ -2642,7 +2642,8 @@ a > .badge {
   transition: 0.25s;
 }
 a:hover > .badge {
-  background-color: #1abc9c;
+  color: #1abc9c;
+  background-color: #fff;
 }
 
 .social-sharing {
