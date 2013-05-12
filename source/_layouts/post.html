@@ -7,21 +7,34 @@ single: true
 <article class="hentry" role="article">
   {% include article.html %}
   <footer>
-    <p class="meta">
-{% if updated %}{{ updated }}</br>{% else %}{% endif %}
-      {% include post/categories.html %}
-    </p>
-    {% unless page.sharing == false %}
-      {% include post/sharing.html %}
-    {% endunless %}
-    <p class="meta">
-      {% if page.previous.url %}
-        <a class="basic-alignment left" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
-      {% endif %}
-      {% if page.next.url %}
-        <a class="basic-alignment right" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo;</a>
-      {% endif %}
-    </p>
+    <hr>
+    <div class="row-fluid">
+      <div class="span6">
+        <p class="meta">
+        {% if updated %}{{ updated }}</br>{% else %}{% endif %}
+        
+          {% include post/categories.html %}
+        </p>
+      </div>
+      
+      {% unless page.sharing == false %}
+      <div class="span6 social-sharing">
+        {% include post/sharing.html %}
+      </div>
+      {% endunless %}
+    </div>
+    <div class="row-fluid">
+      <div class="span12">
+        <p class="meta">
+          {% if page.previous.url %}
+            <a class="basic-alignment left" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
+          {% endif %}
+          {% if page.next.url %}
+            <a class="basic-alignment right" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo;</a>
+          {% endif %}
+        </p>
+      </div>
+    </div>
   </footer>
 </article>
 {% if site.disqus_short_name and page.comments == true %}

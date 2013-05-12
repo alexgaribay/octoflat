@@ -2628,6 +2628,27 @@ hr { display: block; height: 1px;
   background-color: #ECF0F1;
 }
 
+.badge > a {
+  color: #fff; }
+
+.badge a:hover {
+ background-color: #1abc9c; }
+
+a > .badge {
+  color: #fff;  
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+a:hover > .badge {
+  background-color: #1abc9c;
+}
+
+.social-sharing {
+  text-align: right; }
+
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 
   /* Safari and Chrome CSS here */

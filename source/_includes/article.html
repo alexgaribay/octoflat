@@ -5,13 +5,13 @@
         <h1 class="date-time">{% include post/date.html %}{{ time }}</h5>
           <div class="row-fluid">
           {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
-          <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments</a> <span class="fui-bubble-16"></span>
+          <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
           {% endif %}
           </div>
           {% if post.categories %}
           <div class="row-fluid">
           {% for category in post.categories %}
-          <span class="badge">{{ category}}</span>
+          <a href="{{ root_url }}/{{ site.category_dir }}/{{ category }}/"><span class="badge">{{ category }}</span></a>
           {% endfor %}
           </div>
           {% endif %}
