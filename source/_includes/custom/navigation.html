@@ -7,3 +7,17 @@
    	  {% endif %}     
     {% endfor %}
 </ul>
+<ul class="nav pull-right">
+	{% if site.github_user %}
+	<li class="social"><a href="http://github.com/{{ site.github_user }}">&#62208;</a></li>
+	{% endif %}
+	{% if site.linkedin_user %}
+	<li class="social"><a href="http://linkedin.com/in/{{ site.linkedin_user }}">&#62232;</a></li>
+	{% endif %}
+	{% if site.googleplus_user %}
+	<li class="social"><a href="http://plus.google.com/{{ site.googleplus_user }}">&#62223;</a></li>
+	{% endif %}
+	{% if site.facebook_user %}
+	<li class="social"><a href="http://facebook.com/{{ site.facebook_user }}">&#62222;</a></li>
+	{% endif %}
+</ul>

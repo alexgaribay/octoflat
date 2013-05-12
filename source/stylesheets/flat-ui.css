@@ -2628,12 +2628,6 @@ hr { display: block; height: 1px;
   background-color: #ECF0F1;
 }
 
-.badge > a {
-  color: #fff; }
-
-.badge a:hover {
- background-color: #1abc9c; }
-
 a > .badge {
   color: #fff;  
   -webkit-transition: 0.25s;
