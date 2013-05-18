@@ -1,23 +1,9 @@
 <ul class="nav">
-	{% for link in site.navigation %}
+    {% for link in site.navigation %}
       {% if page.url == link.url or index %}
         <li class="active"><a href="{{ link.url }}">{{ link.text }}</a></li>
       {% else %}
-   		<li><a href="{{ link.url }}">{{ link.text }}</a></li>
-   	  {% endif %}     
+        <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+      {% endif %}
     {% endfor %}
-</ul>
-<ul class="nav pull-right">
-	{% if site.github_user %}
-	<li><a href="http://github.com/{{ site.github_user }}" title="Github Profile"><i class="icon-github-sign social-navbar"></i></a></li>
-	{% endif %}
-	{% if site.linkedin_user %}
-	<li><a href="http://linkedin.com/in/{{ site.linkedin_user }}" title="Linkedin Profile"><i class="icon-linkedin-sign social-navbar"></i></a></li>
-	{% endif %}
-	{% if site.googleplus_user %}
-	<li><a href="http://plus.google.com/{{ site.googleplus_user }}" title="Google+ Profile"><i class="icon-google-plus-sign social-navbar"></i></a></li>
-	{% endif %}
-	{% if site.facebook_user %}
-	<li><a href="http://facebook.com/{{ site.facebook_user }}" title="Facebook Profile"><i class="icon-facebook-sign social-navbar"></i></a></li>
-	{% endif %}
 </ul>
