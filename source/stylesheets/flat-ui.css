@@ -2652,4 +2652,12 @@ a:hover > .badge {
   font-weight: 400;
 }
 
+
+/* Here is where any customizations for mobile devices should go */
+@media screen and (max-width: 767px)
+{
+  .social-sharing {
+	text-align: left; }
+}
+
 }
