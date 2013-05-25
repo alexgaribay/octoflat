@@ -8,21 +8,29 @@ single: true
   {% include article.html %}
   <footer>
     <hr>
+    {% if post.category or page.sharing != false %}
     <div class="row-fluid">
+      {% if post.category %}
       <div class="span6">
         <p class="meta">
         {% if updated %}{{ updated }}</br>{% else %}{% endif %}
-        
-          {% include post/categories.html %}
+        {% include post/categories.html %}
         </p>
       </div>
-      
       {% unless page.sharing == false %}
       <div class="span6 social-sharing">
         {% include post/sharing.html %}
       </div>
       {% endunless %}
+      {% else %}
+      {% unless page.sharing == false %}
+      <div class="span12">
+        {% include post/sharing.html %}
+      </div>
+      {% endunless %}
+      {% endif %}
     </div>
+    {% endif %}
     <div class="row-fluid">
       <div class="span12">
         <p class="meta">
