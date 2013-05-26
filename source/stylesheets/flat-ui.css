@@ -2641,7 +2641,12 @@ a:hover > .badge {
 }
 
 .social-sharing {
-  text-align: right; }
+  float: right !important;
+  text-align: right !important; }
+
+.sharing {
+  float: inherit;
+  text-align: :inherit; }
 
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -2657,7 +2662,8 @@ a:hover > .badge {
 @media screen and (max-width: 767px)
 {
   .social-sharing {
-	text-align: left; }
+  float: left !important;
+	text-align: left !important; }
 }
 
 }

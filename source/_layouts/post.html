@@ -8,9 +8,9 @@ single: true
   {% include article.html %}
   <footer>
     <hr>
-    {% if post.category or page.sharing != false %}
+    {% if page.category or page.categories or page.sharing != false %}
     <div class="row-fluid">
-      {% if post.category %}
+      {% if page.category or page.categories %}
       <div class="span6">
         <p class="meta">
         {% if updated %}{{ updated }}</br>{% else %}{% endif %}
