@@ -1,7 +1,7 @@
 .highlight, html .gist .gist-file .gist-syntax .gist-highlight {
   table td.code { width: 100%; }
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
 }
 .highlight .line-numbers, html .gist .gist-file .gist-syntax .highlight .line_numbers {
   text-align: right;
@@ -15,7 +15,7 @@
     @include box-shadow(lighten(#34495e, 2) -1px 0 inset);
   }
   span { color: inherit !important; }
-  padding: .8em !important;
+  padding: .6em !important;
 }
 
 figure.code, .gist-file, pre {
@@ -26,7 +26,6 @@ figure.code, .gist-file, pre {
   @include selection(adjust-color(#2C3E50, $lightness: 23%, $saturation: -65%), $text-shadow: $base03 0 1px);
 }
 html .gist .gist-file {
-  margin-bottom: 1.8em;
   position: relative;
   border: none;
   padding-top: image-height("code_bg.png") !important;
@@ -95,7 +94,7 @@ p, li {
     display: inline-block;
     white-space: no-wrap;
     background: #fff;
-    font-size: .8em;
+    font-size: .6em;
     color: #555;
     border: 1px solid #ddd;
     @include border-radius(.4em);
@@ -110,7 +109,7 @@ p, li {
   overflow: scroll;
   overflow-y: hidden;
   display: block;
-  padding: .8em;
+  padding: .6em;
   overflow-x: auto;
   background: #2C3E50 !important;
   color: $base1 !important;
