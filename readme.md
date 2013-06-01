@@ -36,7 +36,7 @@ $ rake generate
 ---------
 
 ### Configuring Navigation ###
-Add a navigation section to your _config.yml file with the following format:
+Add a navigation section to your _config.yml. Doing this allows the navbar to highlight the active page. Use the following format:
 
 ````
 navigation:
@@ -44,9 +44,27 @@ navigation:
   url: /index.html
 ````
 
+#### Adding New Pages ####
 
-## Please help contribute ##
-This is my first theme and there is a lot of code that isn't necessary. I'll need some help cleaning up the code and making the theme more customizable.
+Create new pages by using the following command:
+
+````
+rake new_page['new_page_name.md']
+````
+
+Go back to update your _config.yml file:
+
+````
+navigation:
+- text: Home
+  url: /index.html
+- text: New Page Title
+  url: /new_page_name.html
+````
+
+
+#### Pull Requests Welcome ####
+I need help making the theme more customizable to the end user. So any help in doing so would be greatly appreciated. Any suggestions are welcome as well!
 
 ## License ##
 This theme is licensed under a MIT License - http://opensource.org/licenses/mit-license.html
