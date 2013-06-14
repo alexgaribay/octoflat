@@ -904,7 +904,8 @@ abbr.initialism {
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid #3498DB;
+  color: #F1C40F;
 }
 
 blockquote p {
@@ -917,7 +918,7 @@ blockquote p {
 blockquote small {
   display: block;
   line-height: 20px;
-  color: #999999;
+  color: #F39C12;
 }
 
 blockquote small:before {
@@ -928,7 +929,7 @@ blockquote.pull-right {
   float: right;
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #eeeeee;
+  border-right: 5px solid #3498DB;
   border-left: 0;
 }
 
