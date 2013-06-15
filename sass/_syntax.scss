@@ -11,7 +11,7 @@
     @include box-shadow(lighten(#34495e, 2) -1px 0 inset);
     text-shadow: lighten($base02, 2) 0 -1px;
   } @else {
-    background: #2C3E50 !important;
+    background: $code-bg-color !important;
     @include box-shadow(lighten(#34495e, 2) -1px 0 inset);
   }
   span { color: inherit !important; }
@@ -23,7 +23,7 @@ figure.code, .gist-file, pre {
 }
 
 .gist .highlight, figure.code .highlight {
-  @include selection(adjust-color(#2C3E50, $lightness: 23%, $saturation: -65%), $text-shadow: $base03 0 1px);
+  @include selection(adjust-color($code-bg-color, $lightness: 23%, $saturation: -65%), $text-shadow: $base03 0 1px);
 }
 html .gist .gist-file {
   position: relative;
@@ -111,7 +111,7 @@ p, li {
   display: block;
   padding: .6em;
   overflow-x: auto;
-  background: #2C3E50 !important;
+  background: $code-bg-color !important;
   color: $base1 !important;
   span { color: $base1 !important; }
   span { font-style: normal !important; font-weight: normal !important; }
@@ -185,7 +185,7 @@ p, li {
 .highlight, .gist-highlight {
   pre { background: none; @include border-radius(0px); border: none; padding: 0; margin-bottom: 0; }
   margin-bottom: 1.8em;
-  background: #2C3E50;
+  background: $code-bg-color;
   overflow-y: hidden;
   overflow-x: auto;
 }
