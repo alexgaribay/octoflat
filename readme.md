@@ -5,6 +5,12 @@ This is a theme using [Twitter Bootstrap](http://twitter.github.io/bootstrap/) a
 
 This theme has a live preview at [AlexGaribay.com](http://alexgaribay.com).
 
+The theme now comes in two different color schemes: a light color scheme and a dark color scheme. The dark scheme is the default.
+
+![Dark](https://dl.dropboxusercontent.com/u/11594277/octoflat/dark.png)
+
+![Light](https://dl.dropboxusercontent.com/u/11594277/octoflat/light.png)
+
 Please update the [Wiki page](https://github.com/alexgaribay/octoflat/wiki/Sites-Using-Octoflat) if you are using this theme.
 
 ## Installing the theme
@@ -62,6 +68,21 @@ navigation:
   url: /new_page_name.html
 ````
 
+---------
+
+## Modifying the Color Scheme ##
+
+The theme has two color scheme options: light and dark. The dark color scheme is the one enabled by default.
+
+To change the color scheme after you've installed the theme, do the following:
+
+````
+$ cd your_octopress_dir/.themes/octoflat/sass
+````
+Edit the _colors.scss file with your favorite text editor.
+Modify the '$theme-color' variable to be set to either 'light' or 'dark'
+
+---------
 
 #### Pull Requests Welcome ####
 I need help making the theme more customizable to the end user. So any help in doing so would be greatly appreciated. Any suggestions are welcome as well!

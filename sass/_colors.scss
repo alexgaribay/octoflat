@@ -44,12 +44,41 @@
 
 $noise-bg: image-url('noise.png') top left !default;
 
-// Start of Octoflat Colors (more will come in time)
+
+//----------------------------------------------------------------------------------
+// CUSTOMIZATION OF OCTOFLAT COLORS
+//----------------------------------------------------------------------------------
+
+
 $primary-color:		#ff5544; // Jumbotron, Horizontal Rules, Headings
-$secondary-color:	#3498DB; // Navbar, Tags, Links, Main Heading, Quote Border
-$tertiary-color:	#1abc9c; // Hover-over color
-$accent-color1:		#fff;	 // Hover-over background color
+$secondary-color:	#3498DB; // Tags, Links, Main Heading, Quote Border
+$tertiary-color:	#1abc9c; // Hover-over color, Active Page color
+$accent-color1:		#ECF0F1; // Hover-over background color for tags
 $accent-color2:		#ECF0F1; // Sub-headings, Date Stamp
+$accent-color3:		#fff;    // Navbar Text, Tag text
 $bg-color:			#34495e; // Background
+$navbar-color:		#2980B9; // Navbar
 $code-bg-color:		#2C3E50; // Code background
 $quote-color:		#F39C12; // Quote Color
+$text-color:		#BDC3C7; // Body Text
+$footer-color:		#bdc1c5; // Footer
+
+
+// Change the theme to be either "light" or "dark"
+$theme-color: dark;
+
+@if ($theme-color == light)
+{
+  $primary-color:		#e69411; // Jumbotron, Horizontal Rules, Headings
+  $secondary-color:		#1dbbd6; // Tags, Links, Main Heading, Quote Border
+  $tertiary-color:		#C0392B; // Hover-over color, Active Page color
+  $accent-color1:		#23defe; // Hover-over background color for tags
+  $accent-color2:		#34495E; // Sub-headings, Date Stamp
+  $accent-color3:		#ffffff; // Navbar Text, Tag text
+  $bg-color:			#ffffff; // Background
+  $navbar-color:		#1ec2de; // Navbar
+  $code-bg-color:		#2C3E50; // Code background
+  $quote-color:			#E74C3C; // Quote Color
+  $text-color:			#717778; // Body Text
+  $footer-color:		#7F8C8D; // Footer
+}
