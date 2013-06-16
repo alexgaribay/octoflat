@@ -77,10 +77,10 @@ The theme has two color scheme options: light and dark. The dark color scheme is
 To change the color scheme after you've installed the theme, do the following:
 
 ````
-$ cd your_octopress_dir/.themes/octoflat/sass
+$ cd your_octopress_dir/.themes/octoflat/sass/custom/
 ````
 Edit the _colors.scss file with your favorite text editor.
-Modify the '$theme-color' variable to be set to either 'light' or 'dark'
+Remove the commented out lines that are specified (line 3 and 18)
 
 ---------
 
