@@ -84,8 +84,18 @@ Remove the commented out lines that are specified (line 3 and 18)
 
 ---------
 
-#### Pull Requests Welcome ####
-I need help making the theme more customizable to the end user. So any help in doing so would be greatly appreciated. Any suggestions are welcome as well!
+### LinkedIn Link ###
+
+To get the LinkedIn link to work, modify your _config.yml to have this line:
+
+````
+$ linkedin_user: username
+````
+Your username can be found by going to your profile page. On your info card at the top of the page, theres a link to your public profile page. 
+Extract out your username from the link.
+www.linkedin.com/in/**username**/
+
+---------
 
 ## License ##
 This theme is licensed under a MIT License - http://opensource.org/licenses/mit-license.html
