@@ -112,6 +112,7 @@ p, li {
   display: block;
   padding: .6em;
   overflow-x: auto;
+  white-space: pre;
   background: $code-bg-color !important;
   color: $base1 !important;
   span { color: $base1 !important; }
