@@ -1,7 +1,9 @@
 .highlight, html .gist .gist-file .gist-syntax .gist-highlight {
   table td.code { width: 100%; }
-  -moz-border-radius: 9px;
-  border-radius: 9px;
+  @include border-bottom-radius(9px);
+}
+.highlight:first-child, html .gist .gist-file .gist-syntax .gist-highlight {
+  @include border-top-radius(9px);
 }
 .highlight .line-numbers, html .gist .gist-file .gist-syntax .highlight .line_numbers {
   text-align: right;
@@ -112,6 +114,7 @@ p, li {
   display: block;
   padding: .6em;
   overflow-x: auto;
+  white-space: pre;
   background: $code-bg-color !important;
   color: $base1 !important;
   span { color: $base1 !important; }
@@ -229,7 +232,7 @@ figure.code {
   color: #474747;
   font-weight: normal;
   margin-bottom: 0;
-  @include border-top-radius(5px);
+  @include border-top-radius(9px);
   font-family: "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", Lucida, sans-serif;
   background: #aaaaaa image-url("code_bg.png") top repeat-x;
 }
