@@ -15,4 +15,7 @@
     {% if site.facebook_user %}
     <li><a href="http://facebook.com/{{ site.facebook_user }}" title="Facebook Profile"><i class="icon-facebook-sign social-navbar"></i></a></li>
     {% endif %}
+    {% if site.email %}
+    <li><a href="mailto:{{ site.email }}" title="Email"><i class="icon-envelope-alt social-navbar"></i></a></li>
+    {% endif %}
 </ul>
