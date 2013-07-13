@@ -85,7 +85,7 @@
   content: "\e012"; }
 
 .fui-bubble-16:before {
-  content: "\e013"; 
+  content: "\e013";
   color: $secondary-color;}
 
 @font-face {
@@ -199,10 +199,10 @@ a {
 h1 {
   color: $primary-color;
   font-size: 32px;
-  font-weight: 900; 
+  font-weight: 900;
   font-family: "Quicksand"; }
   .date-time{
-    font-size: 16px;
+    font-size: 15px;
     color: $accent-color2;
     font-weight: 500;
   }
@@ -577,8 +577,8 @@ h6 {
     .navbar .nav > li > ul li ul {
       left: 100%; }
   .navbar .nav > li > a {
-    padding: 15px 15px 17px; 
-    margin-top: 4px; 
+    padding: 15px 15px 17px;
+    margin-top: 4px;
     border-radius: 5px;
     -moz-border-radius: 5px; }
     .navbar .nav > li > a:hover {
@@ -647,7 +647,7 @@ h6 {
   background: $navbar-color;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
 .navbar-inverse .nav > li > a {
-  color: $accent-color3; 
+  color: $accent-color3;
   font-weight: 300; }
 .navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
   background-color: transparent;
@@ -2629,7 +2629,7 @@ hr { display: block; height: 1px;
 }
 
 a > .badge {
-  color: $accent-color3;  
+  color: $accent-color3;
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
   -o-transition: 0.25s;
