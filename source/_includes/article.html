@@ -1,7 +1,7 @@
 {% unless page.no_header %}
 {% if index %}
   <div class="row-fluid">
-    <div class="span2">
+    <div class="span2 post-meta">
 		<h1 class="date-time">{% include post/date.html %}<i class="icon-calendar-empty"></i> {{ time }}</h5>
           <div class="row-fluid">
           {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
