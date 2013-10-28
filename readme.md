@@ -74,14 +74,14 @@ navigation:
 
 The theme has two color scheme options: light and dark. The dark color scheme is the one enabled by default.
 
-To change the color scheme after you've installed the theme, do the following:
+To change the color scheme *after* you've installed the theme, do the following:
 
 ````
-$ cd your_octopress_dir/.themes/octoflat/sass/custom/
+$ cd your_octopress_dir/sass/custom/
+$ vim _colors.scss
+// Delete lines 3 and 18 and save
+$ rake generate
 ````
-Edit the _colors.scss file with your favorite text editor.
-Remove the commented out lines that are specified (line 3 and 18)
-
 ---------
 
 ### LinkedIn Link ###
