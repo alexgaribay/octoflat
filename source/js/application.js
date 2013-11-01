@@ -1,47 +1,11 @@
 // Some general UI pack related JS
 
-$(function () {
-    // Custom selects
-    $("select").dropkick();
-});
-
 $(document).ready(function() {
-    // Todo list
-    $(".todo li").click(function() {
-        $(this).toggleClass("todo-done");
+    // Move some elements around when viewing from a "mobile" container
+    updateContainer();
+    $(window).resize(function() {
+        updateContainer();
     });
-
-    // Init tooltips
-    $("[data-toggle=tooltip]").tooltip("show");
-
-    // Init tags input
-    $("#tagsinput").tagsInput();
-
-    // Init jQuery UI slider
-    $("#slider").slider({
-        min: 1,
-        max: 5,
-        value: 2,
-        orientation: "horizontal",
-        range: "min",
-    });
-
-    // JS input/textarea placeholder
-    $("input, textarea").placeholder();
-
-    // Make pagination demo work
-    $(".pagination a").click(function() {
-        if (!$(this).parent().hasClass("previous") && !$(this).parent().hasClass("next")) {
-            $(this).parent().siblings("li").removeClass("active");
-            $(this).parent().addClass("active");
-        }
-    });
-
-    $(".btn-group a").click(function() {
-        $(this).siblings().removeClass("active");
-        $(this).addClass("active");
-    });
-
     // Disable link click not scroll top
     $("a[href='#']").click(function() {
         return false
@@ -49,3 +13,36 @@ $(document).ready(function() {
 
 });
 
+function updateContainer() {
+    var $containerWidth = $(window).width();
+    if ($containerWidth <= 767) {
+        swapPlaces(".post-meta", ".post-container");
+	moveDatetime(true);
+    }
+    else {
+        swapPlaces(".post-container", ".post-meta");
+	moveDatetime(false);
+    }
+}
+
+function swapPlaces(currentlyBefore, currentlyAfter) {
+    $(currentlyBefore).each(function() {
+        var $sibling = $(this).siblings(currentlyAfter);
+	$(this).insertAfter($sibling);
+    });
+}
+
+function moveDatetime(underTitle) {
+    if (underTitle == true) {
+        $(".date-time").each(function() {
+            var $title = $(this).closest(".row-fluid").find(".link");
+            $(this).insertAfter($title);
+        });
+    }
+    else {
+	$(".date-time").each(function() {
+	    var $firstItemInPostMeta = $(this).closest(".row-fluid").find(".post-meta").children().first();
+	    $(this).insertBefore($firstItemInPostMeta);
+	});
+    }
+}
