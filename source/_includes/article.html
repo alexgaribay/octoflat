@@ -16,7 +16,7 @@
           </div>
           {% endif %}
     </div>
-    <div class="span10">
+    <div class="span10 post-container">
       <h1 class="link"><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h1>
       {{ content | excerpt }}
       {% capture excerpted %}{{ content | has_excerpt }}{% endcapture %}
