@@ -2,11 +2,11 @@
 {% unless category == '0' %}
 {% if post %}
 {% for category in post.categories %}
-  <a href="{{ root_url }}/{{ site.category_dir }}/{{ category | split: " " | join: "-" | downcase }}/"><span class="badge">{{ category }}</span></a>
+<a href="{{ root_url }}/{{ site.category_dir }}/{{ category | replace:' ','-' | replace:'.','-dot-' | downcase }}/"><span class="badge">{{ category }}</span></a>
 {% endfor %}
 {% else %}
 {% for category in page.categories %}
-  <a href="{{ root_url }}/{{ site.category_dir }}/{{ category | split: " " | join: "-" | downcase }}/"><span class="badge">{{ category }}</span></a>
+  <a href="{{ root_url }}/{{ site.category_dir }}/{{ category | replace:' ','-' | replace:'.','-dot-' | downcase }}/"><span class="badge">{{ category }}</span></a>
 {% endfor %}
 {% endif %}
 {% endunless %}
