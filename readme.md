@@ -84,6 +84,19 @@ $ rake generate
 ````
 ---------
 
+### Sina Weibo Link ###
+
+To get the Sina Weibo link to work, modify your _config.yml to have this line:
+
+```
+$ weibo_user: username
+```
+
+Your username can be found by going to your own page. Extract your username from the URL
+http://weibo.com/**username**
+
+---------
+
 ### LinkedIn Link ###
 
 To get the LinkedIn link to work, modify your _config.yml to have this line:
