@@ -21,6 +21,9 @@
     {% if site.flickr_user %}
     <li><a href="http://flickr.com/photos/{{ site.flickr_user }}" title="Flickr Profile"><i class="icon-flickr social-navbar"></i></a></li>
     {% endif %}
+    {% if site.subscribe_rss %}
+    <li><a href="{{ site.subscribe_rss }}" title="RSS Feed"><i class="icon-rss-sign social-navbar"></i></a></li>
+    {% endif %}
 
     {% if site.email %}
     <li><a href="mailto:{{ site.email }}" title="Email"><i class="icon-envelope social-navbar"></i></a></li>
