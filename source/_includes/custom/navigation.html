@@ -1,5 +1,4 @@
 <ul class="nav">
-    <li><a href="{{ site.subscribe_rss }}" title="RSS Feed"><i class="icon-rss-sign social-navbar"></i></a></li>
     {% for link in site.navigation %}
         <li {% if page.url == link.url %}class="active"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
     {% endfor %}
