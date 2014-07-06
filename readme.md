@@ -95,6 +95,16 @@ Your username can be found by going to your profile page. On your info card at t
 Extract out your username from the link.
 www.linkedin.com/in/**username**/
 
+### XING Link ###
+To get the XING link to work, modify your _config.yml to have this line:
+
+```
+$ xing_user: username
+```
+
+Your username can be found by going to your profile page on XING. It's the part of the url after /profile.
+For instance if your profile page is http://www.xing.com/profile/John_Doe, John_Doe would be the username.
+
 ---------
 
 ## License ##
