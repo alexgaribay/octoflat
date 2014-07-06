@@ -1,5 +1,8 @@
 {% include custom/navigation.html %}
 <ul class="nav pull-right">
+    {% if site.xing_user %}
+    <li><a href="http://xing.com/profile/{{ site.xing_user }}" title="XING Profile"><i class="icon-xing-sign social-navbar"></i></a></li>
+    {% endif %}
     {% if site.github_user %}
     <li><a href="http://github.com/{{ site.github_user }}" title="Github Profile"><i class="icon-github-sign social-navbar"></i></a></li>
     {% endif %}
