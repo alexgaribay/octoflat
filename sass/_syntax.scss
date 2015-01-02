@@ -58,7 +58,7 @@ html .gist .gist-file {
    } @else {
      background: $base02 $noise-bg;
    }
-   @extend .sans;
+   @extend .sans !optional;
     a {
       color: mix($base1, $base01) !important;
       @include hover-link;
