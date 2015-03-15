@@ -11,11 +11,11 @@
   word-break: normal;
   @if $solarized == light {
     background: lighten($base03, 1) $noise-bg !important;
-    @include box-shadow(lighten(#34495e, 2) -1px 0 inset);
+    @include box-shadow(lighten(#6699FF, 2) -1px 0 inset);
     text-shadow: lighten($base02, 2) 0 -1px;
   } @else {
     background: $code-bg-color !important;
-    @include box-shadow(lighten(#34495e, 2) -1px 0 inset);
+    @include box-shadow(lighten(#6699FF, 2) -1px 0 inset);
   }
   span { color: inherit !important; }
   padding: .6em !important;
@@ -58,7 +58,7 @@ html .gist .gist-file {
    } @else {
      background: $base02 $noise-bg;
    }
-   @extend .sans;
+   @extend .sans !optional;
     a {
       color: mix($base1, $base01) !important;
       @include hover-link;
@@ -66,7 +66,7 @@ html .gist .gist-file {
     }
     a[href*='#file'] {
       position: absolute; top: 0; left:0; right:-10px;
-      color: #474747 !important;
+      color: #0E0E0E !important;
       @extend .code-title;
       &:hover { color: $link-color !important; }
     }
@@ -207,7 +207,7 @@ pre, .highlight, .gist-highlight {
 }
 
 .highlight code { 
-  @extend .pre-code; background: #000;
+  @extend .pre-code; background: $secondary-color;
 }
 figure.code {
   background: none;
@@ -229,7 +229,7 @@ figure.code {
   text-align: center;
   font-size: 13px;
   text-shadow: #cbcccc 0 1px 0;
-  color: #474747;
+  color: #0E0E0E;
   font-weight: normal;
   margin-bottom: 0;
   @include border-top-radius(9px);

@@ -16,17 +16,17 @@
 
 
 /* To use the light Solarized highlighting theme uncomment the following line */
-//$solarized: light;
+$solarized: light;
 
 /* If you want to tweak the Solarized colors you can do that here */
-//$base03:          #002b36; //darkest blue
-//$base02:          #073642; //dark blue
-//$base01:          #586e75; //darkest gray
-//$base00:          #657b83; //dark gray
-//$base0:           #839496; //medium gray
-//$base1:           #93a1a1; //medium light gray
-//$base2:           #eee8d5; //cream
-//$base3:           #fdf6e3; //white
+$base03:            #101836; //darkest blue
+$base02:            #202F42; //dark blue
+$base01:            #0A141A; //darkest blue
+$base00:            #1D337A; //darker blue
+$base0:             #244099; //dark blue
+$base1:             #00000A; //almost black
+$base2:             #335CD6; //medium blue
+$base3:             #6699FF; //light blue
 //$solar-yellow:    #b58900;
 //$solar-orange:    #cb4b16;
 //$solar-red:       #dc322f;
@@ -44,15 +44,15 @@
 
 $noise-bg: image-url('noise.png') top left !default;
 
-$primary-color:     #ff5544; // Jumbotron, Horizontal Rules, Headings
-$secondary-color:   #3498DB; // Tags, Links, Main Heading, Quote Border
-$tertiary-color:    #1abc9c; // Hover-over color, Active Page color
-$accent-color1:     #ECF0F1; // Hover-over background color for tags
-$accent-color2:     #ECF0F1; // Sub-headings, Date Stamp
-$accent-color3:     #ffffff;    // Navbar Text, Tag text
-$bg-color:          #34495e; // Background
-$navbar-color:      #2980B9; // Navbar
-$code-bg-color:     #2C3E50; // Code background
-$quote-color:       #F39C12; // Quote Color
-$text-color:        #BDC3C7; // Body Text
-$footer-color:      #bdc1c5; // Footer
+$primary-color:      #003366; // Jumbotron, Horizontal Rules, Headings
+$secondary-color:    #3399FF; // Tags, Links, Main Heading, Quote Border
+$tertiary-color:     #000F3D; // Hover-over color, Active Page color
+$accent-color1:      #47A3FF; // Hover-over background color for tags
+$accent-color2:      #34495E; // Sub-headings, Date Stamp
+$accent-color3:      #ffffff; // Navbar Text, Tag text
+$bg-color:           #ffffff; // Background
+$navbar-color:       #3399FF; // Navbar
+$code-bg-color:      #F8F8FF; // Code background, Ghostwhite
+$quote-color:        #99CCFF; // Quote Color
+$text-color:         #343636; // Body Text
+$footer-color:       #7F8C8D; // Footer

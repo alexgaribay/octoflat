@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic");
+@import url("http://fonts.googleapis.com/css?family=Titillium+Web:400,700,900,400italic");
 @font-face {
   font-family: "Flat-UI-Icons-16";
   src: url("../fonts/Flat-UI-Icons-16.eot");
@@ -179,7 +179,7 @@
 body {
   color: $text-color;
   background: $bg-color;
-  font: 18px/1.831 "Open Sans", sans-serif; }
+  font: 18px/1.831 "Oxygen", sans-serif; }
 
 p {
   font-weight: 300; }
@@ -849,7 +849,7 @@ input[type="color"],
 .uneditable-input {
   border: 2px solid #dce4ec;
   color: $bg-color;
-  font-family: "Lato", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 14px;
   padding: 8px 0 9px 10px;
   text-indent: 1px;
@@ -1311,7 +1311,7 @@ textarea,
     background: transparent;
     border: none;
     color: $bg-color;
-    font-family: "Lato", sans-serif;
+    font-family: "Titillium Web", sans-serif;
     font-size: 14px;
     margin: 0px;
     padding: 0 0 0 5px;
@@ -1983,7 +1983,7 @@ body.vjs-full-window {
   bottom: 4em;
   left: 1em;
   right: 1em;
-  font-family: "Lato", sans-serif; }
+  font-family: "Titillium Web", sans-serif; }
 .video-js .vjs-text-track {
   display: none;
   color: white;
@@ -2199,7 +2199,7 @@ body.vjs-full-window {
   height: 20px;
   width: 50px;
   top: 16px;
-  font: 300 13px "Lato", sans-serif; }
+  font: 300 13px "Titillium Web", sans-serif; }
 
 .vjs-current-time {
   right: 128px;
